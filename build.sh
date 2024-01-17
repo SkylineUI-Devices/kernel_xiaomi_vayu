@@ -58,14 +58,9 @@ completion()
     COMPILED_DTBO=arch/arm64/boot/dtbo.img
     if [[ -f ${COMPILED_IMAGE} && ${COMPILED_DTBO} ]]; then
 
-        echo -e ${LGR} "############################################"
-        echo -e ${LGR} "############# OkThisIsEpic!  ##############"
-        echo -e ${LGR} "############################################${NC}"
+        echo -e ${LGR} "#### build completed successfully (hh:mm:ss) ####"
     else
-        echo -e ${RED} "############################################"
-        echo -e ${RED} "##         This Is Not Epic :'(           ##"
-        echo -e ${RED} "############################################${NC}"
-        exit 1
+        echo -e ${RED} "#### failed to build some targets (hh:mm:ss) ####"
     fi
 }
 make_defconfig
