@@ -18,7 +18,7 @@ export PATH="$CLANG_DIR/bin:$PATH"
 
 if ! [ -d "$CLANG_DIR" ]; then
     echo "Toolchain not found! Cloning to $CLANG_DIR..."
-    if ! git clone -q --depth=1 --single-branch https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/ -b master $TC_DIR; then
+    if ! git clone -q --depth=1 --single-branch https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r510928.git -b 14.0 $TC_DIR; then
         echo "Cloning failed! Aborting..."
         exit 1
     fi
