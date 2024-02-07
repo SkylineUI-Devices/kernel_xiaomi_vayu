@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Thanks to clhex for the script (Github username: clhexftw)
+
 kernel_dir="${PWD}"
 CCACHE=$(command -v ccache)
 objdir="${kernel_dir}/out"
