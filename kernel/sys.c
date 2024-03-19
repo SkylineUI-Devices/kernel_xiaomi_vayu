@@ -1182,6 +1182,7 @@ static int override_release(char __user *release, size_t len)
 	return ret;
 }
 
+extern bool is_legacy_ebpf;
 static uint64_t netbpfload_pid = 0;
 SYSCALL_DEFINE1(newuname, struct new_utsname __user *, name)
 {
