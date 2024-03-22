@@ -65,7 +65,7 @@ completion()
         echo -e ${RED} "#### failed to build some targets (hh:mm:ss) ####"
     fi
 }
-make_defconfig
-compile
+make_defconfig > out/defconfig.log
+compile > out/build.log
 completion
 cd ${kernel_dir}
