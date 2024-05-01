@@ -1,0 +1,10 @@
+Available commands are:
+install_packages: Used for downloading required packages that kernel needs
+
+build: Used for build the kernel using build.sh that found at tools/build/build.sh
+
+clean: Used for removing the whole compiled files
+
+quick_clean: Used for removing some of the generated files and images
+
+sync: Used for upstream local source with the updated source and installing submodules
