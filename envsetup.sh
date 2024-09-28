@@ -1,6 +1,6 @@
 #!bin/bash
 
-alias install_packages='bash tools/build/packages.sh'
+alias dl_debs='bash tools/build/packages.sh'
 alias m='bash tools/build/build.sh'
 alias mclean='bash tools/build/clean.sh'
 alias mqc='bash tools/build/quick_clean.sh'

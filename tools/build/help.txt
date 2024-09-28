@@ -1,5 +1,5 @@
 Available commands are:
-install_packages: Used for downloading required packages that kernel needs
+dl_debs (Download debs): Used for downloading required packages that kernel needs
 
 m: Used for build the kernel using build.sh that found at tools/build/build.sh
 
